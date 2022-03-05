@@ -73,31 +73,31 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
                   Icons.home,
                   // color: Colors.grey[500],
                 ),
-                title: SizedBox(),
+                //title: SizedBox(),
                 backgroundColor: Colors.green),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person,
                 ),
-                title: SizedBox(),
+                //title: SizedBox(),
                 backgroundColor: Colors.yellow),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.search,
               ),
-              title: SizedBox(),
+              //title: SizedBox(),
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.location_on),
-              title: SizedBox(),
+              //title: SizedBox(),
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.notification_important_outlined,
               ),
-              title: SizedBox(),
+              //title: SizedBox(),
               backgroundColor: Colors.blue,
             ),
           ],

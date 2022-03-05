@@ -53,7 +53,7 @@ class Repository {
 
   static Future<List<WhatsappStory>> getWhatsappStories() async {
     final response = await get(
-        "https://raw.githubusercontent.com/blackmann/storyexample/master/lib/data/whatsapp.json");
+        Uri.parse("https://raw.githubusercontent.com/blackmann/storyexample/master/lib/data/whatsapp.json"));
 
     final data = jsonDecode(utf8.decode(response.bodyBytes))['data'];
 
@@ -72,7 +72,7 @@ class Repository {
 
   static Future<Gnews> getNews() async {
     final response = await get(
-        "https://raw.githubusercontent.com/blackmann/storyexample/master/lib/data/gnews.json");
+        Uri.parse("https://raw.githubusercontent.com/blackmann/storyexample/master/lib/data/gnews.json"));
 
     // use utf8.decode to make emojis work
     final data = jsonDecode(utf8.decode(response.bodyBytes))['data'];
